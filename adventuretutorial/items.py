@@ -2,7 +2,7 @@
 
 # package to contain all items
 
-class Item():
+class Item(object):
     """The base class for all items"""
     def __init__(self, name, description, value):
         self.name = name
@@ -16,10 +16,9 @@ class Item():
 class Gold(Item):
     def __init__(self, amt):
         self.amt = amt
-        super().__init__(name="Gold",
-                        description="A round coin with {} \
-						stamped on the front".format(str(self.amt)),
+        super(Gold, self).__init__(name="Gold",
+                        description="A round coin with " +
+                        "{} stamped on the front".format(str(self.amt)),
                         value=self.amt)
 
-
-
+print(Gold(15))
