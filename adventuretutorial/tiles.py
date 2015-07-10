@@ -1,3 +1,5 @@
+#!/opt/local/bin/python
+
 import items, enemies
 
 class MapTile:
