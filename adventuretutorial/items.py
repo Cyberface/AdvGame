@@ -1,4 +1,4 @@
-#!/opt/local/bin/python
+#!/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python
 
 # package to contain all items
 
